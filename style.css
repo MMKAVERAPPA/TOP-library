@@ -1,0 +1,154 @@
+@font-face {
+  font-family: "Roboto";
+  src:
+    url("fonts/Roboto-Regular.woff2") format("woff2"),
+    url("fonts/Roboto-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+  font-family: Roboto, system-ui;
+}
+
+button {
+  border: none;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  text-align: center;
+  background-color: #d4aa7d;
+  color: white;
+  letter-spacing: 2px;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+#header-icon {
+  width: 48px;
+  fill: white;
+}
+
+.header-title {
+  padding: 0;
+  margin: 16px;
+}
+
+.content {
+  flex: 1;
+  background-color: #d2d8b3;
+}
+
+.content-topbar {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.content-topbar h1 {
+  flex: 1;
+  text-align: center;
+  color: #272727;
+  margin-left: 120px;
+}
+
+.create-book {
+  margin: 20px;
+  margin-left: auto;
+  background-color: #d4aa7d;
+  border-radius: 4px;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 16px;
+  border: none;
+}
+
+#create-book-icon {
+  width: 30px;
+  fill: white;
+}
+
+.create-book:hover {
+  background-color: #cc9b66;
+}
+
+.content-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 300px);
+  justify-content: center;
+  gap: 24px;
+  padding: 100px;
+  padding-top: 0px;
+  padding-bottom: 20px;
+}
+
+.content-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 4px;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 16px;
+  min-height: 200px;
+  box-shadow: 0 10px 15px -10px rgba(0, 0, 0, 0.3);
+}
+
+.content-card-title {
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.content-card-id {
+  font-size: 10px;
+  margin-bottom: 10px;
+}
+
+.content-card-bottom {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.content-card-delete {
+  background-color: red;
+  color: white;
+  border-radius: 8px;
+  padding: 4px 8px 4px 8px;
+}
+
+.content-card-summary {
+  flex: 1;
+}
+
+.content-card-read-status {
+  color: white;
+  background-color: green;
+  border-radius: 8px;
+  padding: 4px 12px 4px 12px;
+}
+
+.content-card-read-status.read {
+  background-color: red;
+}
+
+.footer {
+  background-color: #272727;
+  color: white;
+  text-align: center;
+  font-size: 13px;
+}

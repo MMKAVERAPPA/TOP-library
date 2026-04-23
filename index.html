@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="logic.js" defer></script>
+    <title>Library</title>
+  </head>
+
+  <body>
+    <div class="header">
+      <svg
+        id="header-icon"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+      >
+        <title>library</title>
+        <path
+          d="M12,8A3,3 0 0,0 15,5A3,3 0 0,0 12,2A3,3 0 0,0 9,5A3,3 0 0,0 12,8M12,11.54C9.64,9.35 6.5,8 3,8V19C6.5,19 9.64,20.35 12,22.54C14.36,20.35 17.5,19 21,19V8C17.5,8 14.36,9.35 12,11.54Z"
+        />
+      </svg>
+      <h1 class="header-title">LIBRARY</h1>
+    </div>
+    <div class="content">
+      <div class="content-topbar">
+        <h1>Your Books</h1>
+        <button class="create-book">
+          <svg
+            id="create-book-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+          >
+            <title>plus</title>
+            <path d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z" />
+          </svg>
+          New Book
+        </button>
+        <dialog>
+          <form>
+            <p>
+              <label for="title">Book Title</label>
+              <input type="text" id="title" required />
+            </p>
+            <p>
+              <label for="author">Author Name</label>
+              <input type="text" id="author" required />
+            </p>
+            <p>
+              <label for="pages">Number of Pages</label>
+              <input type="number" id="pages" required />
+            </p>
+            <p>
+              <label for="summary">Summary of the Book</label>
+              <textarea id="summary"></textarea>
+            </p>
+          </form>
+          <p>
+            <button id="dialog-close">Close</button>
+            <button id="dialog-submit">Submit</button>
+          </p>
+        </dialog>
+      </div>
+      <div class="content-container"></div>
+    </div>
+    <div class="footer">
+      <p id="footer-text">Made by Kaverappa</p>
+    </div>
+  </body>
+</html>
